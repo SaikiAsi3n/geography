@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="acset/reset.css">
+    <link rel="stylesheet" href="acset/style.css">
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Viet Nam</title>
+</head>
+<body>
+    <!-- <div class="login">
+
+    </div> -->
+    <div class="begin" id="begin">
+        <div class="begin__header">        
+                <ion-icon class="begin__menu" name="menu-outline" onclick="showMenu()">
+                </ion-icon>               
+                <ul class="begin__menu__dropdown" id="begin__menu__dropdown">
+                    <li onclick="showReset()"><a href="#" ></a> Trang chủ</li>
+                    <li onclick="showQues()" id="begin__menu__dropdown__help">Trợ giúp</li>                          
+                </ul>               
+                <img class="begin__avatar" onclick="showAccounts()" src="img/profile.jpg" alt="img">            
+        </div>
+        <div class="begin__ques" id="begin__ques">
+            <h2>Bạn cần hỗ trợ gì?</h2>
+            <ul >
+                <li onclick="showThanks()">Hình ảnh quá nhỏ</li>
+                <li onclick="showThanks()">Chữ quá nhỏ</li>
+                <li onclick="showThanks()">Giao diện khó nhìn</li>               
+                <li onclick="showThanks()">Thông tin chưa đầy đủ</li>               
+            </ul>
+            <ion-icon onclick="hiddenQues()" name="close-circle-outline"></ion-icon>
+
+        </div>
+        <div class="begin__thanks" id="begin__thanks">
+            <h2>Thông báo</h2>
+            <h3>Chúng tôi sẽ cố gắng khắc phục khuyết điểm trên !!!</h3>
+            <ion-icon onclick="hiddenThanks()" name="close-circle-outline"></ion-icon>
+        </div>
+        <div class="begin__accounts" id="begin__accounts">
+            <h2>Thông tin cá nhân</h2>
+            <h3>Họ và tên: Phùng xuân nam</h3>
+            <h3>Năm sinh: 08/10/2001</h3>
+            <h3>Giới tính: Nam</h3>
+            <h3>Quê quán: Hà Nội</h3>
+            <h3>Nghề nghiệp: Sinh viên</h3>
+            <ion-icon onclick="hiddenAccounts()" name="close-circle-outline"></ion-icon>
+        </div>
+        <div class="begin__nextheader">
+            <h1> Viet Nam <br> geography </h1>
+        </div>
+        <div class="begin__main">
+            <div class="begin__main__content__back" onclick="backslide()">
+                <div>
+                    <img id="img__back" class="begin__main__img__back" src="img/haiphong.jpg" alt="">
+                </div>            
+                <div class="begin__main__info__back">
+                    <h2 id="name__back">Hải Phòng</h2>
+                    <p id="info__back">Hải Phòng được mệnh danh là thành phố cảng </p>
+                </div>
+            </div>
+            <div class="begin__main__content__present">
+                <div>
+                    <img id="img__present" class="begin__main__img__present" src="./img/hanoi.jpg" alt="">
+                </div>
+                <div class="begin__main__info__present">
+                    <h2 id="name__present">Hà Nội</h2>
+                    <p id="info__present">Hà Nội là thủ đô của đất nước Việt Nam</p>
+                </div>
+                <div class="begin__main__slide__present">
+                    <ion-icon name="arrow-forward-circle-outline" onclick="showPage()"></ion-icon>  
+                </div>             
+            </div>
+            <div class="begin__main__content__next" onclick="nextslide()">
+                <div>
+                    <img id="img__next" class="begin__main__img__next" src="img/hochiminh.jpg" alt="">
+                </div>                
+                <div class="begin__main__info__next">
+                    <h2 id="name__next">Hồ chí Minh</h2>
+                    <p id="info__next">Hồ Chí Minh là trung tâm tài chính lớn nhất Việt  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="start" id="start">
+        <div class="start__header">
+            <ion-icon class="start__header__back" name="arrow-back-outline" onclick="hiddenPage()"></ion-icon>
+            <img class="start__header__logo" id="start__header__logo" src="img/hanoi.jpg" alt="">
+        </div>
+        <div class="start__main">
+            <div class="start__main__content">
+                <h2 id="start__main__name">Hồ Chí Minh</h2>
+                <p id="start__main__info">Thành phố Hồ Chí Minh (tên gọi cũ là Sài Gòn hay Xì Gòn, Xì Phố),
+                    tuy nhiên hiện nay vẫn thường được dùng) là thành phố lớn nhất ở Việt Nam về dân số và quy mô đô thị hóa.
+                    Đây còn là trung tâm kinh tế, chính trị, văn hóa và giáo dục tại Việt Nam. 
+                    .</p>
+                <iframe id="start__main__video" width="560" height="315" src="https://www.youtube.com/embed/3KDtWI2-cwY?controls=0" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope" allowfullscreen>
+                </iframe>
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="acset/js.js"></script>
+</body>
+</html>
