@@ -1,9 +1,200 @@
-body {
-    margin-top: 6rem;
-    margin-left: 40rem;
+body { 
     box-sizing: border-box;
     width: 20rem;
     height: 35rem;
+}
+.login {
+    width: 20rem;
+    height: 38rem;
+    border-radius: 20px;
+    position: relative;
+    display: block;
+}
+.login__header {
+    background-image: url(../img/background.png);
+    width: 20rem;
+    height: 17rem;
+}
+
+.login__header > h2 {
+    font-size: 60px;
+    color: aliceblue;
+    font-family: Brush Script MT;
+    word-wrap: break-word;
+    text-align: center;
+    position: absolute;
+    left: 4rem;
+    top: 6rem;
+}
+.login__main {
+    background-color: rgb(236, 233, 228);
+    width: 20rem;
+    height: 17rem;
+}
+.login__main__form {
+    position: absolute;
+    left: 1rem;
+    top: 18rem;
+}
+.login__main__tk {
+    width: 17.2rem;
+    height: 2rem;
+    border-radius: 5px;
+    left: 0rem;
+    border: 1px groove  #b5d0e9;
+    position: absolute;
+    padding-left: 0.5rem;
+    font-family: Arial;
+
+}
+.login__main__mk {
+    width: 17.2rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px groove  #b5d0e9;
+    padding-left: 0.5rem;
+    top: 2.3rem;
+    position: absolute;
+    font-family: Arial;
+
+}
+.login__main__join {
+    background-color: #1F69B0;
+    width: 18rem;
+    height: 2.6rem;
+    position: absolute;
+    top: 5.7rem;
+    left: 0rem;
+    border-radius: 12px;
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: Arial;
+    cursor: pointer;
+}
+
+.login__main__forget {
+    position: absolute;
+    top: 27rem;
+    left: 6rem;
+    color: #085fb1;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.login__footer {
+    background-color: rgb(236, 233, 228);
+    width: 20rem;
+    height: 4rem;
+}
+.login__footer > h3 {
+    position: absolute;
+    left: 8.5rem;
+    top: 33rem;
+    font-weight: 800;
+    
+}
+.login__footer > h4 {
+    position: absolute;
+    left: 4.2rem;
+    top: 32.7rem;   
+}
+.login__footer > h5 {
+    position: absolute;
+    left: 10.9rem;
+    top: 32.7rem; 
+}
+.login__footer__creater {
+    width: 18rem;
+    height: 2rem;
+    background-color: #b5d0e9;
+    position: absolute;
+    top: 35rem;
+    left: 1rem;
+    border-radius: 12px;
+}
+.login__footer__creater > h2 {
+    position: absolute;
+    top: 0.5rem;
+    left: 4rem;
+    color: #032e57;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial;
+    cursor: pointer;
+}
+.creater {
+    width: 20rem;
+    height: 38rem;
+    border-radius: 20px;
+    position: relative;
+    display: none;
+}
+.creater__header {
+    background-image: url(../img/background.png);
+    width: 20rem;
+    height: 17rem;
+}
+.creater__header > h2 {
+    font-size: 60px;
+    color: aliceblue;
+    font-family: Brush Script MT;
+    word-wrap: break-word;
+    text-align: center;
+    position: absolute;
+    left: 4rem;
+    top: 6rem;
+}
+.creater__main {
+    background-color: rgb(236, 233, 228);
+    width: 20rem;
+    height: 17rem;
+}
+.creater__footer {
+    background-color: rgb(236, 233, 228);
+    width: 20rem;
+    height: 4rem;
+}
+.creater__main__form {
+    position: absolute;
+    left: 1rem;
+    top: 18rem;
+}
+.creater__main__tk {
+    width: 17.2rem;
+    height: 2rem;
+    border-radius: 5px;
+    left: 0rem;
+    border: 1px groove  #b5d0e9;
+    position: absolute;
+    padding-left: 0.5rem;
+    font-family: Arial;
+
+}
+.creater__main__mk {
+    width: 17.2rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px groove  #b5d0e9;
+    padding-left: 0.5rem;
+    top: 2.3rem;
+    position: absolute;
+    font-family: Arial;
+
+}
+
+.creater__main__join {
+    background-color: #1F69B0;
+    width: 18rem;
+    height: 2.6rem;
+    position: absolute;
+    top: 6rem;
+    left: 0rem;
+    border-radius: 12px;
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: Arial;
+    cursor: pointer;
 }
 
 .begin {
@@ -12,7 +203,7 @@ body {
     background-color: #1F69B0;
     border-radius: 20px;
     position: relative;
-    /* display: none; */
+    display: none;
 }
 
 .begin__menu  {
@@ -25,7 +216,7 @@ body {
     float: left;
 }
 .begin__menu__dropdown {
-    opacity: 0;
+    display: none;
     transition-duration: 0.3s;
 }
 .begin__menu__dropdown > li {
@@ -60,7 +251,7 @@ body {
     top: 4rem;
     left: 2rem;
     border-radius: 40px; 
-    opacity: 0;
+    display: none;
     transition-duration: 0.4s;
     
 }
@@ -100,7 +291,7 @@ body {
     top: 4rem;
     left: 2rem;
     border-radius: 40px; 
-    opacity: 0;
+    display: none;
     transition-duration: 0.5s;
 }
 .begin__thanks > h2 {
@@ -132,7 +323,7 @@ body {
     top: 4rem;
     left: 3rem;
     border-radius: 40px; 
-    opacity: 0;
+    display: none;
     transition-duration: 0.5s;
 }
 .begin__accounts > h2 {
@@ -145,13 +336,27 @@ body {
     margin-top: 2rem;
     border: 2px solid rgb(10, 113, 231);
     width: 13rem;
+    height: 1rem;
+    background-color: #b5d0e9;
+    padding: 0.3rem;
+    color: rgb(3, 44, 10);
+    font-weight: 400;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.begin__accounts > h4 {
+    margin-top: 2.2rem;
+    width: 14.4rem;
     height: 2rem;
+    text-align: center;
     background-color: #b5d0e9;
     padding: 0.3rem;
     color: rgb(3, 44, 10);
     font-weight: 900;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    font-size: x-large;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
 }
 .begin__accounts > ion-icon {
     margin-top: 1rem;
@@ -171,7 +376,7 @@ body {
     margin-left: 1rem;
     word-wrap: break-word;
     text-align: center;
-    cursor: pointer;
+    
 }
 .begin__main__content__present {
     width: 10rem;

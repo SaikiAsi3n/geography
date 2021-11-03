@@ -95,13 +95,13 @@ function hiddenPage() {
 var menu=2;
 function showMenu() {   
     if (menu%2==0){
-        document.getElementById('begin__menu__dropdown').style.opacity= '1';
+        document.getElementById('begin__menu__dropdown').style.display= 'block';
     }
     if (menu%2!=0){
-        document.getElementById('begin__menu__dropdown').style.opacity='0';
-        document.getElementById('begin__ques').style.opacity='0';
+        document.getElementById('begin__menu__dropdown').style.display='none';
+        document.getElementById('begin__ques').style.display='none';
         document.getElementById('begin__menu__dropdown__help').style.color = 'white';
-        document.getElementById('begin__thanks').style.opacity= '0';      
+        document.getElementById('begin__thanks').style.display= 'none';      
         document.getElementById('begin__thanks').style.zIndex='0';
         ques=2;
     }
@@ -112,46 +112,46 @@ function showMenu() {
 var ques=2;
 function showQues(){
     if (ques%2==0){
-        document.getElementById('begin__ques').style.opacity= '1';
+        document.getElementById('begin__ques').style.display= 'block';
         document.getElementById('begin__menu__dropdown__help').style.color = 'lawngreen';
-        document.getElementById('begin__thanks').style.opacity= '0';      
+        document.getElementById('begin__thanks').style.display= 'none';      
         document.getElementById('begin__thanks').style.zIndex='0';
-        document.getElementById('begin__accounts').style.opacity = '0';
-        document.getElementById('begin__accounts').style.zIndex = '0';
+        document.getElementById('begin__accounts').style.display = 'none';
+        document.getElementById('begin__accounts').style.zIndex = 'none';
         acc=2;
     }
     if (ques%2!=0){
-        document.getElementById('begin__ques').style.opacity='0';
+        document.getElementById('begin__ques').style.display='none';
         document.getElementById('begin__menu__dropdown__help').style.color = 'white';
-        document.getElementById('begin__thanks').style.opacity= '0';      
+        document.getElementById('begin__thanks').style.display= 'none';      
         document.getElementById('begin__thanks').style.zIndex='0';
     }
     ques++;
 }
 function hiddenQues(){
-    document.getElementById('begin__ques').style.opacity='0';
+    document.getElementById('begin__ques').style.display='none';
     ques=2;
 }
 
 
 function showThanks() {
-    document.getElementById('begin__thanks').style.opacity= '1';      
+    document.getElementById('begin__thanks').style.display= 'block';      
     document.getElementById('begin__thanks').style.zIndex='1';
-    document.getElementById('begin__ques').style.opacity= '0';      
+    document.getElementById('begin__ques').style.display= 'none';      
 }
 function hiddenThanks() {
-    document.getElementById('begin__thanks').style.opacity= '0';      
+    document.getElementById('begin__thanks').style.display= 'none';      
     document.getElementById('begin__thanks').style.zIndex='0';
     ques=2;
-    // document.getElementById('begin__ques').style.opacity= '1'; 
+    // document.getElementById('begin__ques').style.display= 'block'; 
 }
 
 function showReset() {
-    document.getElementById('begin__ques').style.opacity='0';
+    document.getElementById('begin__ques').style.display='none';
     document.getElementById('begin__menu__dropdown__help').style.color = 'white';
-    document.getElementById('begin__thanks').style.opacity= '0';      
+    document.getElementById('begin__thanks').style.display= 'none';      
     document.getElementById('begin__thanks').style.zIndex='0';
-    document.getElementById('begin__accounts').style.opacity = '0';
+    document.getElementById('begin__accounts').style.display = 'none';
     document.getElementById('begin__accounts').style.zIndex = '0';
     ques=2;
     acc=2;
@@ -161,23 +161,39 @@ var acc=2;
 
 function showAccounts(){
     if(acc==2){
-        document.getElementById('begin__accounts').style.opacity = '1';
+        document.getElementById('begin__accounts').style.display = 'block';
         document.getElementById('begin__accounts').style.zIndex = '1';
-        document.getElementById('begin__ques').style.opacity='0';
+        document.getElementById('begin__ques').style.display='none';
         document.getElementById('begin__menu__dropdown__help').style.color = 'white';
-        document.getElementById('begin__thanks').style.opacity= '0';      
+        document.getElementById('begin__thanks').style.display= 'none';      
         document.getElementById('begin__thanks').style.zIndex='0';
         ques=2;
         acc++;       
     }
     else {
-        document.getElementById('begin__accounts').style.opacity = '0';
+        document.getElementById('begin__accounts').style.display = 'none';
         document.getElementById('begin__accounts').style.zIndex = '0';
         acc--;
     }   
 }
 function hiddenAccounts(){
-    document.getElementById('begin__accounts').style.opacity = '0';
+    document.getElementById('login').style.display = 'block';
+    document.getElementById('login').style.zIndex = '1';
+    document.getElementById('begin').style.display = 'none';
+    document.getElementById('begin').style.zIndex = '0';
+    document.getElementById('begin__accounts').style.display = 'none';
     document.getElementById('begin__accounts').style.zIndex = '0';
     acc--;
+}
+
+function showBegin() {
+    document.getElementById('login').style.display = 'none';
+    document.getElementById('login').style.zIndex = '0';
+    document.getElementById('begin').style.display = 'block';
+    document.getElementById('begin').style.zIndex = '1';
+}
+
+function showCreater() {
+    document.getElementById('login').style.display = 'none';
+    document.getElementById('creater').style.display = 'block';
 }

@@ -12,9 +12,50 @@
     <title>Viet Nam</title>
 </head>
 <body>
-    <!-- <div class="login">
+    <div class="login" id="login">
+        <div class="login__header">
+            <h2> Viet Nam <br> geography </h2>
+        </div>
+        <div class="login__main">
+            <div class="login__main__form">
+                <form>                   
+                    <input class="login__main__tk" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Số điện thoại hoặc email" title="Nhập đúng email"><br/>                    
+                    <input class="login__main__mk" type="password" name="password" pattern=".{6,}" placeholder="Mật khẩu" title="Nhập mật khẩu từ sáu ký tự trở lên"><br/>
+                    <input class="login__main__join"  type="submit" value="Đăng nhập">
+                </form>
+            </div>
+            <div class="login__main__forget">
+                <h2 onclick="showBegin()">Quên mật khẩu?</h2>
+            </div>
+        </div>
+        <div class="login__footer"> 
+            <h4>________</h4>           
+            <h5>________</h5>           
+            <h3>Hoặc</h3>
+            <div class="login__footer__creater">
+                <h2 onclick="showCreater()">Tạo tài khoản mới</h2>           
+            </div>
+        </div>               
+    </div>
 
-    </div> -->
+    <div class="creater" id="creater">
+        <div class="creater__header">
+            <h2> Viet Nam <br> geography </h2>
+        </div>
+        <div class="creater__main">
+            <div class="creater__main__form">
+                <form>                   
+                    <input class="creater__main__tk" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Số điện thoại hoặc email" title="Nhập đúng email"><br/>                    
+                    <input class="creater__main__mk" type="password" name="password" pattern=".{6,}" placeholder="Mật khẩu" title="Nhập mật khẩu từ sáu ký tự trở lên"><br/>
+                    <input class="creater__main__join"  type="submit" value="Đăng kí">
+                </form>
+            </div>
+        </div>
+        <div class="creater__footer">
+
+        </div>
+    </div>
+
     <div class="begin" id="begin">
         <div class="begin__header">        
                 <ion-icon class="begin__menu" name="menu-outline" onclick="showMenu()">
@@ -48,7 +89,8 @@
             <h3>Giới tính: Nam</h3>
             <h3>Quê quán: Hà Nội</h3>
             <h3>Nghề nghiệp: Sinh viên</h3>
-            <ion-icon onclick="hiddenAccounts()" name="close-circle-outline"></ion-icon>
+            <h3>Tình trạng hôn nhân: Độc thân</h3>
+            <h4 onclick="hiddenAccounts()">Đăng xuất</h4>        
         </div>
         <div class="begin__nextheader">
             <h1> Viet Nam <br> geography </h1>
@@ -65,9 +107,9 @@
             </div>
             <div class="begin__main__content__present">
                 <div>
-                    <img id="img__present" class="begin__main__img__present" src="./img/hanoi.jpg" alt="">
+                    <img  id="img__present" class="begin__main__img__present" src="./img/hanoi.jpg" alt="" onclick="showPage()">
                 </div>
-                <div class="begin__main__info__present">
+                <div class="begin__main__info__present" onclick="showPage()">
                     <h2 id="name__present">Hà Nội</h2>
                     <p id="info__present">Hà Nội là thủ đô của đất nước Việt Nam</p>
                 </div>
