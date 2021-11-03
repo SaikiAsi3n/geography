@@ -573,3 +573,13 @@ body {
     width: 17rem;
     height: 8rem;
 }
+
+.che {
+    width: 5rem;
+    height: 30rem;
+    position: relative;
+    z-index: 1000;
+    background-color: white;
+    top: -30rem;
+    left: 20rem;
+}
